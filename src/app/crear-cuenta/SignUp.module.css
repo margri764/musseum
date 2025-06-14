@@ -1,0 +1,184 @@
+.back {
+  /* background-image: url('/assets/images/back-signup.jpg');  */
+  background-image: url('/assets/images/back_8.png');
+  background-size:cover;     /* Cubre todo el contenedor */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;              /* Ejemplo: pantalla completa */
+  width: 100%;
+}
+
+.whiteFrame{
+
+    background-color: white;
+    height: 590px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.94); 
+     overflow: hidden;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.divider2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--default-color);
+  margin-top: 50px;
+}
+
+.divider2::before,
+.divider2::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 12px;
+}
+
+.divider2 span {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap; /* opcional, para evitar overflow en pantallas chicas */
+}
+.socialButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  justify-content: center;
+  width: 200px;
+}
+
+
+.socialButton:hover {
+  background-color: #f5f5f5;
+}
+
+.socialButton img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.title{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    text-align: center;
+     letter-spacing: -2.5px; /* Reducí más si querés apretar más */
+
+}
+
+.nextButton {
+  position: relative;
+  width: 80%;
+  display: block;
+  padding: 10px 40px 10px 20px; /* espacio a la derecha para la flecha */
+  background-color: rgb(255, 34, 0);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.nextButton span  {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-family: var(--font-outfit);
+}
+
+.nextButton i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+
+.nextButton:disabled {
+  background-color: #ccc;         /* Color gris desactivado */
+  border: 1px solid #999;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.nextButton:disabled span,
+.nextButton:disabled i{
+  color: #666 !important;         /* Asegurarse de que los íconos y texto cambien de color */
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(201, 201, 201);;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover  {
+  background-color: rgb(255, 34, 0); /* más oscuro al hacer hover */
+}
+
+.backButton:hover i {
+  color: white;
+}
+
+.backButtonPressed {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+
+.terms {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.terms a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+.more{
+  color: red;
+  background: color-mix(in srgb, red, transparent 80%);
+  display: inline-block;
+  padding: 6px 30px 8px 30px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+  width: 300px;
+  line-height: 2rem;
+}
+
+
